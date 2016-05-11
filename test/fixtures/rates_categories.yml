@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  onepax: 1
+  twopax: 1
+  extra: 1
+  onepaxsp: 1
+  twopaxsp: 1
+  extrasp: 1
+  rooms_category_id: 
+  rate_id: 
+
+two:
+  onepax: 1
+  twopax: 1
+  extra: 1
+  onepaxsp: 1
+  twopaxsp: 1
+  extrasp: 1
+  rooms_category_id: 
+  rate_id: 

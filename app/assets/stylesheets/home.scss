@@ -1,0 +1,144 @@
+.container{
+  text-align: center;
+
+}
+
+html, body {
+  background: #fff;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+  text-transform: lowercase;
+}
+
+table{
+  width: 100%;
+  text-align: center;
+  th{
+    text-align: center;
+  }
+  tr{
+    height: 80px;
+  }
+  td{
+    padding: 2px;
+  }
+}
+
+/* HEADER */
+
+
+.header {
+  i{
+    font-size: 45px;
+    a{
+      color: $dark-green;
+      text-decoration: none;
+    }
+  }
+  .options{
+    .dropdown-toggle{cursor: pointer;}
+  }
+
+  float: left;
+  height: 60px;
+  line-height: 60px;
+  padding: 0;
+  margin-bottom: 20px;
+  background-color: $light-green;
+  color: white;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.270588) 5px 8px 16px;
+  box-shadow: rgba(0, 0, 0, 0.270588) 5px 8px 16px;
+  .session{
+    i{
+      font-size: 30px;
+    }
+    span{
+      line-height: 60px;
+    }
+  }
+}
+
+.rows{
+  padding: 5px 0;
+  .buttons div{
+    padding-top: 5px;
+  }
+  .button{
+    padding: 0;
+    line-height: 42px;
+  }
+  span{
+    border: 1px solid gray;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 10px;
+  }
+  div{
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+
+
+
+/* FORM PAGES */
+
+
+.form {
+  text-align:center;
+  margin: 0 auto 10px;
+  padding: 20px 0 10px 0;
+  font-size: 16px;
+  width: 300px;
+}
+
+input[type=text],
+input[type=number],
+input[type=email],
+input[type=password] {
+  color: #666666;
+  border: 1px solid #E6E6E6;
+  border-radius: 0px;
+  height: 60px;
+  margin: 6px auto;
+  text-indent: 10px;
+}
+input[type=number],
+input[type=email],
+input[type=password] {
+  width: 100%;
+}
+
+.form-inputs{
+  margin-top: 30px;
+  margin-bottom: 30px;
+  div{
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  select{
+    background: none;
+    padding: 20px;
+    width: 50%;
+    border: 1px solid #E6E6E6;
+    option{
+      padding: 10px;
+    }
+  }
+}
+
+.form-actions{
+  margin-bottom: 20px;
+}
+
+.btn-submit {
+  color: #FFFFFF;
+  font-size: 18px;
+  text-transform: uppercase;
+  background: #c91717;
+  padding: 10px 20px;
+  border: 0;
+  margin-top: 6px;
+}

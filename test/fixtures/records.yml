@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  reservation: 
+  debt: 
+  credit: 
+  value: 
+  date: 2016-05-11 16:27:11
+  note: MyString
+
+two:
+  reservation: 
+  debt: 
+  credit: 
+  value: 
+  date: 2016-05-11 16:27:11
+  note: MyString

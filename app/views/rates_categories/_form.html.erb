@@ -1,0 +1,49 @@
+<%= form_for(@rates_category) do |f| %>
+  <% if @rates_category.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@rates_category.errors.count, "error") %> prohibited this rates_category from being saved:</h2>
+
+      <ul>
+      <% @rates_category.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :onepax %><br>
+    <%= f.number_field :onepax %>
+  </div>
+  <div class="field">
+    <%= f.label :twopax %><br>
+    <%= f.number_field :twopax %>
+  </div>
+  <div class="field">
+    <%= f.label :extra %><br>
+    <%= f.number_field :extra %>
+  </div>
+  <div class="field">
+    <%= f.label :onepaxsp %><br>
+    <%= f.number_field :onepaxsp %>
+  </div>
+  <div class="field">
+    <%= f.label :twopaxsp %><br>
+    <%= f.number_field :twopaxsp %>
+  </div>
+  <div class="field">
+    <%= f.label :extrasp %><br>
+    <%= f.number_field :extrasp %>
+  </div>
+  <div class="field">
+    <%= f.label :rooms_category_id %><br>
+    <%= f.text_field :rooms_category_id %>
+  </div>
+  <div class="field">
+    <%= f.label :rate_id %><br>
+    <%= f.text_field :rate_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

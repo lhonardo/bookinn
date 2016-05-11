@@ -1,0 +1,41 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Rates Categories</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Onepax</th>
+      <th>Twopax</th>
+      <th>Extra</th>
+      <th>Onepaxsp</th>
+      <th>Twopaxsp</th>
+      <th>Extrasp</th>
+      <th>Rooms category</th>
+      <th>Rate</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @rates_categories.each do |rates_category| %>
+      <tr>
+        <td><%= rates_category.onepax %></td>
+        <td><%= rates_category.twopax %></td>
+        <td><%= rates_category.extra %></td>
+        <td><%= rates_category.onepaxsp %></td>
+        <td><%= rates_category.twopaxsp %></td>
+        <td><%= rates_category.extrasp %></td>
+        <td><%= rates_category.rooms_category %></td>
+        <td><%= rates_category.rate %></td>
+        <td><%= link_to 'Show', rates_category %></td>
+        <td><%= link_to 'Edit', edit_rates_category_path(rates_category) %></td>
+        <td><%= link_to 'Destroy', rates_category, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Rates category', new_rates_category_path %>

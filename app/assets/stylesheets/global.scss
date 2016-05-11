@@ -1,0 +1,42 @@
+$light-green: rgb(184, 213, 123);
+$top-green: rgba(184, 213, 123, 0.95);
+$dark-green: rgb(73, 124, 57);
+$logo-black: #383330;
+
+$font: sans-serif;
+
+h1{
+  font-size: 2.5em;
+}
+
+.glyphicon{
+  line-height: inherit;
+  top: inherit;
+}
+.btn-a{
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  color: $light-green;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid $light-green;
+  white-space: nowrap;
+  padding: 6px 12px;
+  font-size: 15px;
+  line-height: 1.42857143;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  &:hover, &:focus{
+    color: white;
+    background-color: $light-green;
+    text-decoration: none;
+  }
+}

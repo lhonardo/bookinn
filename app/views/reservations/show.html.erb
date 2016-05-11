@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Company:</strong>
+  <%= @reservation.company %>
+</p>
+
+<p>
+  <strong>Person:</strong>
+  <%= @reservation.person %>
+</p>
+
+<p>
+  <strong>In:</strong>
+  <%= @reservation.in %>
+</p>
+
+<p>
+  <strong>Out:</strong>
+  <%= @reservation.out %>
+</p>
+
+<p>
+  <strong>Inreal:</strong>
+  <%= @reservation.inreal %>
+</p>
+
+<p>
+  <strong>Outreal:</strong>
+  <%= @reservation.outreal %>
+</p>
+
+<p>
+  <strong>Note:</strong>
+  <%= @reservation.note %>
+</p>
+
+<p>
+  <strong>Customvalue:</strong>
+  <%= @reservation.customvalue %>
+</p>
+
+<%= link_to 'Edit', edit_reservation_path(@reservation) %> |
+<%= link_to 'Back', reservations_path %>

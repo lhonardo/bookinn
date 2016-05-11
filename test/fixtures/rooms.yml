@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  description: MyText
+  maxpax: 1
+  area: 1
+  rooms_category_id: 
+
+two:
+  name: MyString
+  description: MyText
+  maxpax: 1
+  area: 1
+  rooms_category_id: 

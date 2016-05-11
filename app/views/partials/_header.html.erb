@@ -1,0 +1,31 @@
+<% if current_user %>
+  <div class="header col-md-12">
+    <nav class="container">
+      <i class="col-md-1"><%= link_to '', root_path, class: 'glyphicon glyphicon-home', title: 'Home'%></i>
+      <div class="col-md-7">
+        <div class="options col-md-2">
+          <div class="dropdown-toggle pull-left" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Tarifas<span class="caret"></span>
+          </div>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+            <li><%= link_to 'Categorias de Tarifa', rates_path %></li>
+            <li role="separator" class="divider"></li>
+            <li><%= link_to 'Valores x Tarifas', rates_categories_path %></li>
+            <li><%= link_to 'Tarifário', rates_schedules_path %></li>
+          </ul>
+        </div>
+        <div class="options col-md-2">
+          <div class="dropdown-toggle pull-left" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Cadastros<span class="caret"></span>
+          </div>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+            <li><%= link_to 'Acomodações Categorias', rooms_categories_path %></li>
+            <li><%= link_to 'Acomodações', rooms_path %></li>
+          </ul>
+        </div>
+      </div>
+      <div class="session col-md-4 pull-right">
+        <span class="pull-left"><%= current_user.email %></span>
+        <i><%= link_to "logout", logout_path, method: "delete", class: 'glyphicon glyphicon-log-out', title: 'Logout' %></i>
+      </div>
+    </nav>
+  </div>
+<% end %>
